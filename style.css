@@ -1,48 +1,75 @@
-/*.container {
-  border: 3px solid rgb(238, 104, 99);
-  border-radius: 100%;
-  width: 10px;
-  margin: 60px 80px;
-  padding: 10px 10px;
-  height: 10px;
-}*/
-
-.mainwrap {
-  font-weight: 600em;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-.container {
-  padding: 2em 0em 0em 0em;
-  margin: 1em 7em -5em 2em;
+
+.container img {
+  width: 7em;
+  height: 3.6em;
+  padding: 1.5em 0em 1em 2em;
 }
 
 .mobileimg img {
   width: 100%;
 }
-.w {
+.w p {
   font-family: "Josefin Sans", sans-serif;
   color: rgb(199, 177, 178, 255);
-  letter-spacing: 0.5em;
+  letter-spacing: 0.3em;
+  font-size: 2em;
+  font-weight: 500;
+  margin: 1.3em 1em 0em 1em;
+}
+.cs h5 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-size: 2em;
+  font-weight: 600;
+  color: rgb(71, 69, 69);
 }
 .hello p {
   font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
   color: rgb(199, 177, 178, 255);
-  display: inline;
-  font-size: 14px;
+  font-size: 12px;
+  text-align: center;
+  padding: 1em 2em 2.3em 2em;
+  line-height: 1.5;
 }
 .email {
-  max-width: 360px;
+  width: 90%;
+  max-width: 280px;
+  margin: 0 auto;
 }
 .email input {
   display: inline;
   border-radius: 10em;
   border: 1px solid rgb(227, 207, 208, 255);
   height: 3em;
-  width: 18em;
+  width: 19em;
   padding: 0 2em;
-  margin: 0em -3em 0em 3em;
   position: absolute;
   outline: none;
 }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(199, 177, 178, 255);;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(199, 177, 178, 255);;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(199, 177, 178, 255);d;
+}
+
 .email button {
   background-color: rgb(244, 177, 177, 255);
   border: none;
@@ -50,9 +77,10 @@
   width: 4.5em;
   height: 3.2em;
   position: relative;
-  margin-left: 80%;
+  margin-left: 75%;
   cursor: pointer;
 }
+
 .email button:hover {
   box-shadow: 0px 2px 5px 3px lightgrey;
 }
@@ -64,10 +92,22 @@
   .mobileimg {
     display: none;
   }
-  .mainwrap {
-    display: flex;
+ 
+  .contentwrap {
+    width: 50vw;
+    float: left;
+  }
+
+  .desktopwrap {
+    width:50vw;
+    float: left;
+
   }
   .desktopimg img {
     display: block;
+    width: 50%;
+    height: 100%;
   }
+  
 }
+
