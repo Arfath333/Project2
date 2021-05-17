@@ -56,18 +56,18 @@
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(199, 177, 178, 255);;
+  color: rgb(199, 177, 178, 255);
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: rgb(199, 177, 178, 255);;
+  color: rgb(199, 177, 178, 255);
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: rgb(199, 177, 178, 255);d;
+  color: rgb(199, 177, 178, 255);
 }
 
 .email button {
@@ -92,22 +92,23 @@
   .mobileimg {
     display: none;
   }
- 
+  .parent {
+    display: flex;
+    flex direction:row;
+    height: 100%;
+  }
   .contentwrap {
-    width: 50vw;
-    float: left;
+    height: 100%;
+    width: 100vw;
   }
 
   .desktopwrap {
-    width:50vw;
-    float: left;
-
+    height: 100%;
+    width: 100vw;
   }
   .desktopimg img {
     display: block;
-    width: 50%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   }
-  
 }
-
