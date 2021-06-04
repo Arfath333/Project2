@@ -21,6 +21,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   color: rgb(197, 168, 169);
   letter-spacing: 0.3em;
+  text-align: center;
   font-size: 2em;
   font-weight: 500;
   margin: 1.3em 1em 0em 1em;
@@ -43,7 +44,7 @@ body {
   line-height: 1.5;
 }
 .email {
-  width: 85%;
+  width: 85vw;
   max-width: 280px;
   margin: 0 auto;
 }
@@ -66,6 +67,7 @@ body {
   height: 2.85em;
   position: relative;
   margin-left: 75%;
+  box-shadow: 0px 2px 15px 3px rgb(241, 214, 214);
   cursor: pointer;
 }
 ::placeholder {
@@ -86,6 +88,7 @@ body {
 
 .email button:hover {
   box-shadow: 0px 2px 5px 3px lightgrey;
+  color: rgb(229, 209, 210);
 }
 .desktopimg img {
   display: none;
@@ -97,24 +100,106 @@ body {
   }
   .parent {
     display: flex;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+  }
+  .contentwrap {
+    height: 100vh;
+    width: 50vw;
   }
 
+  .paragraph {
+    margin: 4em 0em;
+    width: 55vw;
+  }
   .desktopwrap {
-    height: 100vh;
-    width: 100vw;
+    height: 50vh;
+    width: 50vw;
   }
   .desktopimg img {
     display: block;
-    width: 40vw;
     height: 100vh;
-  }
-  .container {
-    margin: 3em 3em 3em 3em;
-    height: 4em;
+    width: 45vw;
   }
 
-  .hello {
-    margin: 0em auto;
+  .container img {
+    text-align: left;
+    margin: 1em 1em;
+    width: 18vw;
+    height: 12vh;
+  }
+
+  .w p {
+    text-align: left;
+    margin: 0em 1em;
+    width: 18vw;
+    font-size: 3em;
+  }
+  .cs h5 {
+    text-align: left;
+    margin: 0em 1em;
+    width: 18vh;
+    font-size: 3em;
+  }
+  .hello p {
+    text-align: left;
+    margin: 1em 2em;
+    line-height: 1.5em;
+  }
+  .email {
+    text-align: left;
+    margin: 0em 3em;
+    width: 90vw;
+  }
+  .email button {
+    width: 9vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    margin: 3em 5em;
+  }
+  .container img {
+    width: 15vw;
+    height: 9vh;
+  }
+  .paragraph {
+    margin: 6em auto;
+  }
+  .w p {
+    text-align: left;
+    margin: 0em 1.5em;
+    width: 18vw;
+    font-size: 5em;
+  }
+  .cs h5 {
+    text-align: left;
+    margin: 0em 1.5em;
+    width: 18vh;
+    font-size: 5em;
+  }
+  .hello p {
+    text-align: left;
+    margin: 0.5em 4em;
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+  .email {
+    text-align: left;
+    max-width: 500px;
+    margin: 0em 8em;
+  }
+  .email input {
+    height: 3.5em;
+    font-weight: 600;
+    font-size: 1.3em;
+    width: 22em;
+    padding: 1em 1em;
+  }
+  .email button {
+    width: 9vw;
+    height: 7.4vh;
+    box-shadow: 0px 15px 10px 5px rgb(247, 233, 235);
   }
 }
